@@ -1,0 +1,187 @@
+$primary-color: white;// scss: Farbe ändern
+
+/*.mainnav {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 10px;
+    width: 30%;
+    float: left;
+}
+
+.mainnav li {
+    border: 1px solid black;
+    margin-bottom: 0.1em;
+    padding-left: 0.3em;
+
+    list-style: none;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}*/
+
+
+h1{
+  text-align: center;
+}
+#textfeld{
+
+}
+
+
+a {
+  text-decoration: none;
+}
+a::after {
+  color: red;
+}
+div{  //scss: Variable verwenden und nesting
+  h2{
+    color: $primary-color;
+    text-align: center;
+  }
+  li{
+    color: $primary-color;
+    list-style-type: none;
+    text-align: center;
+  }
+}
+/*li {
+  list-style-type: none;
+  text-align: center;
+}*/
+/*.div {
+    padding: 1px;
+    margin: auto;
+    min-height: 100%;
+    box-sizing: border-box;
+
+}*/
+.gridcontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+/*.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 0.5em;
+}*/
+.flex2 {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  flex-direction: column;
+  /* margin: 0% 40% 0% 40%;*/
+  padding: 0.5em;
+}
+
+
+.navigation {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row:1;
+  font-family: Bahnschrift;
+
+  background-image: url("../2.jpg") ;
+  background-position: center;
+  background-size: 100%;
+
+  font-weight: bold;
+
+  /* float: left;
+   width: 50%;*/
+}
+
+.essen {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row:1;
+  background-image: url("../bananenbrot.webp") ;
+  background-position: center;
+  background-size: 100%;
+
+  font-weight: bold;
+  /* float: right;
+   width: 50%;*/
+}
+
+.essen2 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row: 2;
+
+  background-image: url("../shakshuka2.jpg") ;
+  background-position: center;
+  background-size: 100%;
+
+  font-weight: bold;
+  /* float: left;
+   width: 50%;*/
+}
+
+.essen3 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row: 2;
+  background-image: url("../Huuuhn.jpg") ;
+  background-position: center;
+  background-size: 100%;
+  font-weight: bold;
+
+
+  /* float: right;
+   /*margin-right: 40%;
+   width: 50%;*/
+}
+
+@media only screen and (max-width: 400px+400px) { //scss: Grenze ausrechnen
+  .flexcontainer {
+    /* flex: 0 1 100%;
+       order: 1;*/
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .navigation {
+    width:100% ;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row:1;
+  }
+
+  .essen {
+    width:100% ;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row:2;
+  }
+
+  .essen2 {
+    width:100% ;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row:3;
+  }
+
+  .essen3 {
+    width:100% ;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row:4;
+  }
+
+}
+
+.form_padding {
+  margin: 0.5em;
+}

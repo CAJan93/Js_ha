@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Hausaufgabe Lars Mensch</title>
+    <link href="css/main.css" rel="stylesheet" media="all" />
+    <script src="JS.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Mahlzeiten</h1>
+      <a href="#" onClick="return addcomment(123)">hh</a>
+    </header>
+
+    <div class="gridcontainer">
+      <div class="navigation">
+        <h2>Navigation</h2>
+        <ul class="flex2">
+          <li><a href="#jump1">Frühstück</a></li>
+          <li><a href="#jump2">Mittagessen</a></li>
+          <li><a href="#jump3">Abendbrot</a></li>
+        </ul>
+      </div>
+
+      <div class="essen" id="jump1">
+        <h2>Frühstück</h2>
+        <ul class="flex2">
+          <li>Bananenbrot</li>
+        </ul>
+      </div>
+
+      <div class="essen2" id="jump2">
+        <h2>Mittagessen</h2>
+        <ul class="flex2">
+          <li>Shakshuka</li>
+        </ul>
+      </div>
+
+      <div class="essen3" id="jump3">
+        <h2>Abendbrot</h2>
+        <ul class="flex2">
+          <li>Hähnchen mit Reis</li>
+        </ul>
+      </div>
+    </div>
+
+    <p id="somefancyid"></p>
+    <form class="form_padding" name="awesomeform" onsubmit="return kommentar()">
+      <label for="Benutzername">Benutzername: </label><br />
+      <input type="text" id="Benutzername" name="Benutzername" /><br />
+      <label for="titel">Titel:</label><br />
+      <input type=text" id="titel" name="titel"><br />
+      <label for="nachricht">Ihre Nachricht an uns: </label><br />
+      <input type="text" id="nachricht" name="nachricht" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
